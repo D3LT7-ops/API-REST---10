@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos - FIPE Consulta</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-car"></i>
+                <span>FIPE Consulta</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="consulta.html" class="nav-link">Consultar</a></li>
+                <li><a href="favoritos.html" class="nav-link active">Favoritos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Meus Favoritos</h1>
+            
+            <div class="favoritos-actions">
+                <button id="clearFavoritos" class="btn btn-danger">
+                    <i class="fas fa-trash"></i>
+                    Limpar Todos
+                </button>
+            </div>
+
+            <div id="favoritosList" class="favoritos-list">
+                <!-- Favoritos serão carregados aqui -->
+            </div>
+
+            <div id="emptyFavoritos" class="empty-state" style="display: none;">
+                <i class="fas fa-heart-broken"></i>
+                <h3>Nenhum favorito encontrado</h3>
+                <p>Adicione veículos aos favoritos para vê-los aqui</p>
+                <a href="consulta.html" class="btn btn-primary">Fazer Consulta</a>
+            </div>
+        </div>
+    </main>
+        <footer>        
+                <div class="footer-dev">
+                    <p>Site desenvolvido por:</p>
+                        <ul>
+                        <li>
+                            Helberth Renan Gomes De Sousa
+                            <a href="https://github.com/D3LT7-ops" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        </ul>
+                </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DELTA CARROS  Todos os direitos de uso seguem a 
+                <a id="licenca" href="">licença MIT.</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

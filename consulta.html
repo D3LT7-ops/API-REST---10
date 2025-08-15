@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar - FIPE Consulta</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-car"></i>
+                <span>FIPE Consulta</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="consulta.html" class="nav-link active">Consultar</a></li>
+                <li><a href="favoritos.html" class="nav-link">Favoritos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Consultar Veículo</h1>
+            
+            <div class="form-container">
+                <form id="consultaForm">
+                    <div class="form-group">
+                        <label for="tipoVeiculo">Tipo de Veículo</label>
+                        <select id="tipoVeiculo" required>
+                            <option value="">Selecione o tipo</option>
+                            <option value="carros">Carros</option>
+                            <option value="motos">Motos</option>
+                            <option value="caminhoes">Caminhões</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="marca">Marca</label>
+                        <select id="marca" required disabled>
+                            <option value="">Primeiro selecione o tipo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modelo">Modelo</label>
+                        <select id="modelo" required disabled>
+                            <option value="">Primeiro selecione a marca</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ano">Ano</label>
+                        <select id="ano" required disabled>
+                            <option value="">Primeiro selecione o modelo</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                        Consultar Preço
+                    </button>
+                </form>
+            </div>
+
+            <div id="loading" class="loading" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i>
+                Consultando...
+            </div>
+
+            <div id="resultado" class="resultado" style="display: none;">
+                <h3>Resultado da Consulta</h3>
+                <div class="resultado-card">
+                    <div id="resultadoContent"></div>
+                    <button id="addFavorito" class="btn btn-secondary">
+                        <i class="fas fa-heart"></i>
+                        Adicionar aos Favoritos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+            <footer>        
+                <div class="footer-dev">
+                    <p>Site desenvolvido por:</p>
+                        <ul>
+                        <li>
+                            Helberth Renan Gomes De Sousa
+                            <a href="https://github.com/D3LT7-ops" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        </ul>
+                </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 DELTA CARROS  Todos os direitos de uso seguem a 
+                <a id="licenca" href="">licença MIT.</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
