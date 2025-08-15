@@ -25,6 +25,7 @@
 
 /* Footer */
 .footer {
+    text-align: center;
     background: var(--gray-800);
     color: var(--white);
     padding: 3rem 0 1rem;
